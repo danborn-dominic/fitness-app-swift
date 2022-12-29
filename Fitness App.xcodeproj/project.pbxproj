@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07FEA723295D3B4700374853 /* Fitness_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEA722295D3B4700374853 /* Fitness_AppApp.swift */; };
-		07FEA725295D3B4700374853 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEA724295D3B4700374853 /* ContentView.swift */; };
+		07FEA723295D3B4700374853 /* Fitness_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEA722295D3B4700374853 /* Fitness_App.swift */; };
+		07FEA725295D3B4700374853 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEA724295D3B4700374853 /* LaunchView.swift */; };
 		07FEA727295D3B4B00374853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FEA726295D3B4B00374853 /* Assets.xcassets */; };
 		07FEA72A295D3B4B00374853 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FEA729295D3B4B00374853 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07FEA71F295D3B4700374853 /* Fitness App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		07FEA722295D3B4700374853 /* Fitness_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_AppApp.swift; sourceTree = "<group>"; };
-		07FEA724295D3B4700374853 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07FEA722295D3B4700374853 /* Fitness_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_App.swift; sourceTree = "<group>"; };
+		07FEA724295D3B4700374853 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		07FEA726295D3B4B00374853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07FEA729295D3B4B00374853 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +51,10 @@
 		07FEA721295D3B4700374853 /* Fitness App */ = {
 			isa = PBXGroup;
 			children = (
-				07FEA722295D3B4700374853 /* Fitness_AppApp.swift */,
-				07FEA724295D3B4700374853 /* ContentView.swift */,
+				07FEA722295D3B4700374853 /* Fitness_App.swift */,
+				07FEA731295D3CF100374853 /* Views */,
+				07FEA732295D3CFF00374853 /* ViewModels */,
+				07FEA730295D3CE700374853 /* Models */,
 				07FEA726295D3B4B00374853 /* Assets.xcassets */,
 				07FEA728295D3B4B00374853 /* Preview Content */,
 			);
@@ -65,6 +67,28 @@
 				07FEA729295D3B4B00374853 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07FEA730295D3CE700374853 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07FEA731295D3CF100374853 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07FEA724295D3B4700374853 /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07FEA732295D3CFF00374853 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FEA725295D3B4700374853 /* ContentView.swift in Sources */,
-				07FEA723295D3B4700374853 /* Fitness_AppApp.swift in Sources */,
+				07FEA725295D3B4700374853 /* LaunchView.swift in Sources */,
+				07FEA723295D3B4700374853 /* Fitness_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
