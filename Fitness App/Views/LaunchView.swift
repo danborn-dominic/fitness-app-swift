@@ -22,4 +22,5 @@ struct LaunchView_Previews: PreviewProvider {
         
         LaunchView()
     }
+    
 }
