@@ -11,7 +11,49 @@ struct LaunchView: View {
     
     var body: some View {
         
-        Text("Hello World")
+        TabView {
+            
+            NavigationView {
+                HomeView()
+            }
+            .tabItem {
+                VStack {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            }
+            
+            NavigationView {
+                WorkoutsView()
+            }
+            .tabItem {
+                VStack {
+                    Image(systemName: "figure.strengthtraining.traditional")
+                    Text("Workouts")
+                }
+            }
+            
+            NavigationView {
+                RecentView()
+            }
+            .tabItem {
+                VStack {
+                    Image(systemName: "clock")
+                    Text("Recent")
+                }
+            }
+            
+            NavigationView {
+                SettingsView()
+            }
+            .tabItem {
+                VStack {
+                    Image(systemName: "ellipsis")
+                    Text("More")
+                }
+            }
+            
+        }
         
     }
 }
