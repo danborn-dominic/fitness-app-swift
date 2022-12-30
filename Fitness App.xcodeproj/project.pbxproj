@@ -15,6 +15,9 @@
 		07FEA736295E3EF300374853 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEA735295E3EF300374853 /* WorkoutsView.swift */; };
 		07FEA738295E3F0E00374853 /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEA737295E3F0E00374853 /* RecentView.swift */; };
 		07FEA73A295E3F2E00374853 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEA739295E3F2E00374853 /* SettingsView.swift */; };
+		07FEA73C295E741300374853 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEA73B295E741300374853 /* RectangleView.swift */; };
+		07FEA73E295E804700374853 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEA73D295E804700374853 /* Weight.swift */; };
+		07FEA740295E80E800374853 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEA73F295E80E800374853 /* Workout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		07FEA735295E3EF300374853 /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
 		07FEA737295E3F0E00374853 /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
 		07FEA739295E3F2E00374853 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		07FEA73B295E741300374853 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		07FEA73D295E804700374853 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		07FEA73F295E80E800374853 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 				07FEA732295D3CFF00374853 /* ViewModels */,
 				07FEA730295D3CE700374853 /* Models */,
 				07FEA726295D3B4B00374853 /* Assets.xcassets */,
+				07FEA741295F4AF100374853 /* Data */,
 				07FEA728295D3B4B00374853 /* Preview Content */,
 			);
 			path = "Fitness App";
@@ -80,6 +87,8 @@
 		07FEA730295D3CE700374853 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				07FEA73D295E804700374853 /* Weight.swift */,
+				07FEA73F295E80E800374853 /* Workout.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -92,6 +101,7 @@
 				07FEA735295E3EF300374853 /* WorkoutsView.swift */,
 				07FEA737295E3F0E00374853 /* RecentView.swift */,
 				07FEA739295E3F2E00374853 /* SettingsView.swift */,
+				07FEA73B295E741300374853 /* RectangleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +111,13 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		07FEA741295F4AF100374853 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,11 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FEA734295E3ED800374853 /* HomeView.swift in Sources */,
+				07FEA73C295E741300374853 /* RectangleView.swift in Sources */,
 				07FEA725295D3B4700374853 /* LaunchView.swift in Sources */,
 				07FEA736295E3EF300374853 /* WorkoutsView.swift in Sources */,
 				07FEA73A295E3F2E00374853 /* SettingsView.swift in Sources */,
 				07FEA738295E3F0E00374853 /* RecentView.swift in Sources */,
 				07FEA723295D3B4700374853 /* Fitness_App.swift in Sources */,
+				07FEA73E295E804700374853 /* Weight.swift in Sources */,
+				07FEA740295E80E800374853 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

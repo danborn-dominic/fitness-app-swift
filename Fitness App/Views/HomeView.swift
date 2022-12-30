@@ -8,15 +8,24 @@
 import SwiftUI
 
 struct HomeView: View {
-    
-    var color : UIColor = UIColor(red: 187, green: 187, blue: 187, alpha: 1)
-    
+        
     var body: some View {
         
         ZStack {
             Color(UIColor(red: (242 / 255.0), green: (242 / 255.0), blue: (242 / 255.0), alpha: 1.0))
                 .ignoresSafeArea()
-            Text("Home View")
+            
+            ScrollView {
+                
+                RectangleView(cardTitle: "Weight", height: 150)
+                
+                RectangleView(cardTitle: "Today's workout", height: 100)
+                
+                RectangleView(cardTitle: "Last lift", height: 125)
+                
+                
+            }
+            
         }
         .toolbar {
             
