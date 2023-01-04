@@ -24,7 +24,7 @@ struct AddWorkoutView: View {
                 TextField("Workout name", text: $name)
                 
                 VStack {
-                    Text("\(DataController.calculateHours(seconds: Int(length))) hr \(DataController.calculateMins(seconds: Int(length))) mins")
+                    Text("Length: \(DataController.calculateHours(seconds: Int(length))) hr \(DataController.calculateMins(seconds: Int(length))) mins")
                     Slider(value: $length, in: 0...10800, step: 60)
                 }
                 .padding()
