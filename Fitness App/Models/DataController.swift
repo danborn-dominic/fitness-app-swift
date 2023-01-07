@@ -10,11 +10,12 @@ import CoreData
 
 class DataController : ObservableObject {
     
-    // need the persistance container
+    // need the persistance container, how you interact with the data
     let container = NSPersistentContainer(name: "WorkoutModel")
     
     // constructor
     init() {
+        // loads the data
         container.loadPersistentStores { description, error in
             
             if let error = error {
@@ -47,8 +48,17 @@ class DataController : ObservableObject {
         
         // call the save function, just calls the context save method
         save(context: context)
-        
     }
+    
+    func editWorkout(workout: Workout, name: String, length: Int64, context: NSManagedObjectContext) {
+        let workout = Workout(context: context)
+        workout.name = name
+        workout.lengthSeconds = length
+        
+        save(context: context)
+    }
+    
+    
     
     static func calculateMins(seconds: Int) -> Int {
         return Int(Int((Double(seconds) / 60.0)) % 60)
