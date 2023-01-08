@@ -18,8 +18,6 @@ struct WorkoutsView: View {
     
     @State private var showingAddView = false
     
-    @State private var showingDeleteAlert = false
-    
     var body: some View {
         
 
@@ -46,7 +44,6 @@ struct WorkoutsView: View {
                             .padding(.leading, 35)
                     }
                 }
-//                .onDelete(perform: deleteWorkout)
             }
 
         }.toolbar {
