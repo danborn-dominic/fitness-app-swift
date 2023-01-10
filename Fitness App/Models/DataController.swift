@@ -50,6 +50,16 @@ class DataController : ObservableObject {
         save(context: context)
     }
     
+    // function to save an exercise
+    func addExerciseToList(name: String, context: NSManagedObjectContext) {
+        // create new exercise object
+        let exercise = ExerciseForList(context: context)
+        exercise.name = name
+        
+        // save
+        save(context: context)
+    }
+    
     func editWorkout(workout: Workout, name: String, length: Int64, context: NSManagedObjectContext) {
         let workout = Workout(context: context)
         workout.name = name

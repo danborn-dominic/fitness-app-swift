@@ -10,12 +10,9 @@ import CoreData
 
 struct SingleWorkoutView: View {
     
-    // for data management
-    @Environment(\.managedObjectContext) var managedObjectContext
+    @State var workout: Workout
     
-    @State private var workout: Workout
-    
-    @State private var showingDeleteAlert = false
+    @State var showingDeleteAlert = false
     
     var body: some View {
         
@@ -23,12 +20,14 @@ struct SingleWorkoutView: View {
             
             ScrollView {
                 
+                
+                
             }
         }
         .toolbar {
             
             ToolbarItem(placement: .navigationBarLeading) {
-                Text("Workouts")
+                Text("\(workout.name!)")
                     .bold()
             }
             
@@ -36,12 +35,10 @@ struct SingleWorkoutView: View {
                 Button {
                     showingDeleteAlert = true
                 } label: {
-                    Image(systemName: "more")
+                    Label("Add workout", systemImage: "plus.circle")
                 }
                 .alert("Delete this workout?", isPresented: $showingDeleteAlert) {
-                    Button("OK") {
-                        deleteWorkout(index: index)
-                    }
+                    
                 }
 
 

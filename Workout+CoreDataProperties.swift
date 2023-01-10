@@ -2,7 +2,7 @@
 //  Workout+CoreDataProperties.swift
 //  Fitness App
 //
-//  Created by Dominic Danborn on 1/7/23.
+//  Created by Dominic Danborn on 1/10/23.
 //
 //
 

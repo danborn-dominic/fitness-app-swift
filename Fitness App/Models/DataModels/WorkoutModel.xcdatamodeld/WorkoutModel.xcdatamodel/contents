@@ -6,6 +6,9 @@
         <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Set" inverseName="exercise" inverseEntity="Set"/>
         <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="exercises" inverseEntity="Workout"/>
     </entity>
+    <entity name="ExerciseForList" representedClassName="ExerciseForList" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="Set" representedClassName="Set" syncable="YES">
         <attribute name="isWorkingSet" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="numReps" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
